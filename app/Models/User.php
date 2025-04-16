@@ -9,8 +9,9 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use TCG\Voyager\Models\User as VoyagerUser;
 
-class User extends Authenticatable
+class User extends VoyagerUser
 {
     use HasApiTokens;
     use HasFactory;
